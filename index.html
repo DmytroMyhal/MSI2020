@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>MSI 2020</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!--  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <section id="main">
+    <div class="container">
+      <h3>MSI 2020</h3>
+      <h1>Hey!</h1>
+      <h2>Let’s try to find a joke for you:</h2>
+      <div id="methods">
+        <div class="option">
+          <input type="radio" name="method" id="randomOption" value="random" checked>
+          <label for="randomOption">Random</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="method" id="categoriesOption" value="category">
+          <label for="categoriesOption">From categories</label>
+          <div class="categories"></div>
+        </div>
+        <div class="option">
+          <input type="radio" name="method" id="searchOption" value="search">
+          <label for="searchOption">Search</label>
+          <div class="searchField">
+            <input type="text" id="query" placeholder="Free text search...">
+          </div>
+        </div>
+      </div>
+      <button id="getJoke">Get a joke<span class="alert"></span></button>
+      <div class="jokesList"></div>
+    </div>
+  </section>
+  <section id="sidebar"></section>
+  <h3 id="sidebarTitle">
+    <span class="icon">
+      <span class="line"></span>
+      <span class="line"></span>
+    </span>
+    Favourite
+  </h3>
+  <div id="blackBG"></div>
+  
+  <script src="js/index.js"></script>
+</body>
+</html>
